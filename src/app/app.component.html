@@ -1,0 +1,31 @@
+
+<div class="container">
+  <div class="header">
+    <h2> Blogging Website </h2>
+  </div>
+
+  <router-outlet>
+    <div *ngIf="isUserLoggedIn()" class="navbar">
+      <a routerLink="users">Home</a>
+      <a routerLink="users/profile">Profile</a>
+      <a routerLink="users/create-post">Create New Post</a>
+      <div class="dropdown">
+        <button class="dropbtn">More Options </button>
+        <div class="dropdown-content">
+          <a routerLink="users/setting">Setting </a>
+          <a (click)="LogOut()">Logout</a>
+        </div>
+      </div>
+    </div>
+  </router-outlet>
+
+  <!-- Loader Spinner  -->
+  <app-loader> </app-loader>
+
+  <div class="footer">
+    <span>Get Started</span>
+    <span>Subscribe</span>
+    <span>Have an account</span>
+    <p>Company ©Gammastack. All rights reserved.</p>
+  </div>
+</div>

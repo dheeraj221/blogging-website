@@ -1,0 +1,22 @@
+.loader {
+  position: fixed;
+  display:block;
+  top: 45%;
+  left: 50%; 
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #3498db;
+  border-bottom: 10px solid #3498db;
+  width: 30px;
+  height: 30px; 
+  -webkit-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
+  animation-duration: 1s;
+  transition-delay: 5s;
+  transition-duration: 5s; 
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} 

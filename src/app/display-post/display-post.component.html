@@ -1,0 +1,58 @@
+<div class="display-post-container">  
+  <h3> Post</h3>
+  <table>
+    <tr>
+      <td>
+        <span>Post Id :</span>
+      </td>
+      <td>
+        {{id}} <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Title :</span>
+      </td>
+      <td>
+        {{title}} <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Description :</span>
+      </td>
+      <td>
+        {{description}} <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Created On :</span>
+      </td>
+      <td>
+        {{dateFormat(createdAt)}} <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Last Updated On :</span>
+      </td>
+      <td>
+        {{dateFormat(lastUpdate)}} <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Author :</span>
+      </td>
+      <td>
+        {{author}} <br>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+  <button routerLink="../">Back</button>
+  <br>
+
+</div>

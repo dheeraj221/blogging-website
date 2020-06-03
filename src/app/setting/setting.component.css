@@ -1,0 +1,49 @@
+.setting-container{
+  height: 500px;
+  margin-top: 2%;
+}
+
+input{
+  padding: 5px;
+  margin-left: -30%;
+  width: 120%;
+}
+
+input:hover{
+  border-radius: 10px;
+  transform: scale3d(1.1);
+  background-color: rgb(209, 205, 205);
+}
+
+h2 {
+  margin-left: 43%;  
+}
+
+table {
+  font-size: large;
+  margin-left : 25%;
+  background-color: skyblue;
+  padding: 50px;
+  width: 50%;
+  border-radius: 20px;
+}
+
+button {
+  padding: 10px 5px;
+  margin: 1% 45%;
+  width: 100px;
+}
+
+button:hover {
+  background-color: rgb(209, 205, 205);
+  border-radius: 10px;
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+.message {
+  color: red;
+  margin-left: 36%;
+  font-size: 20px;
+  font-weight: bolder;
+}

@@ -1,0 +1,54 @@
+/*
+.my-container {
+  border : 1px solid black;
+}
+
+.my-row {
+  border : 1px solid black;
+}
+
+.my-col {
+  border : 2px solid black;
+} */
+
+img {
+  width : 40%;
+  margin:0px 30%;
+
+} 
+
+.posts button {
+  margin-right : 80px;
+  margin-bottom: 40px;
+  padding : 10px;
+  width: 150px;
+}
+
+button:hover {
+  background-color: rgb(209, 205, 205);
+  transform: scale(1.05);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#firstBtn {
+  margin-left: 37%;
+}
+
+.post-title{
+  font-size: x-large;
+  font-weight: bolder;
+  color:black;
+  margin-left: 30%; 
+}
+
+.post-DateFrom{
+  font-size: smaller;
+  color: #333;
+  margin-left: 1%; 
+} 
+
+img:hover{
+  transform: scaleX(1.05) scaleY(1.05);
+  box-shadow: 15px 5px gray; 
+}

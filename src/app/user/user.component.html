@@ -1,0 +1,13 @@
+<div>
+  <h2> Posts </h2>
+  <div class="posts" *ngFor="let post of allPosts, index as i">
+    <div class= "postContent" (click)="showPost(post)">
+      <img class = "image" src="../../assets/blog.jpeg" alt="Post.jpg"> <br>
+      <span class="post-title"> {{post["title"]}} </span>
+      <span class="post-DateFrom"> {{dateFormat(post["createdAt"])}} </span> <br>
+    </div>
+
+    <button id="firstBtn" (click)="editPost(post)">Edit</button>
+    <button (click)="getConfirmation(post['id'], i)">Delete</button> <br>
+  </div>
+</div>

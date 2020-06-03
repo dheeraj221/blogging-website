@@ -1,0 +1,31 @@
+.display-post-container  {
+  height: 460px;
+  margin-top: 3%;
+}
+
+h3 {
+  text-align: center;   
+}
+
+table {
+  margin-left : 18%;
+  background-color: skyblue;
+  padding: 50px;
+  width: 70%;
+  border-radius: 20px;
+}
+
+button {
+  font-weight: bold;
+  position: relative;
+  margin : 2% 48%;
+  padding: 10px;
+  width: 80px;
+}
+
+button:hover {
+  background-color: rgb(209, 205, 205);
+  transform: scale(1.1);
+  border-radius: 5px;
+  font-weight: bold;
+}

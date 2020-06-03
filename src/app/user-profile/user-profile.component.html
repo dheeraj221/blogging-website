@@ -1,0 +1,58 @@
+<div class="profileContainer">
+  <h2>User-profile</h2>
+  <div *ngIf="user">
+    <table>
+      <tr>
+        <td>
+          <span>ID :</span>
+        </td>
+        <td>
+          {{user['id']}} <br>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span>Name :</span>
+        </td>
+        <td>
+          {{user['username']}} <br>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span>Email :</span>
+        </td>
+        <td>
+          {{user['email']}} <br>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span>Role :</span>
+        </td>
+        <td>
+          {{user['role']}} <br>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span>Account Created On :</span>
+        </td>
+        <td>
+          {{dateFormat(user['createdAt'])}} <br>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span>Last Updated On :</span>
+        </td>
+        <td>
+          {{dateFormat(user['updatedAt'])}} <br>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <button (click)="updateUser()">Edit Profile</button> <br>
+    <button routerLink="../">Back</button>
+  </div>
+</div>

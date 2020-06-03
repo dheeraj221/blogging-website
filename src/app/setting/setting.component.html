@@ -1,0 +1,34 @@
+<div class="setting-container">
+  <h2>Change Password</h2>
+  <table>
+    <tr>
+      <td>
+        <span>Current Password :</span>
+      </td>
+      <td>
+        <input [(ngModel)]="password" type='password' required> <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>New Password :</span>
+      </td>
+      <td>
+        <input [(ngModel)]="newPassword" type='password' required> <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Confirm Password :</span>
+      </td>
+      <td>
+        <input [(ngModel)]="confirmPassword" type='password' required> <br>
+      </td>
+    </tr>
+  </table>
+  <button (click)= "updateUser()">Update</button>
+  <br>
+  <div class="message">{{message}}</div>
+  <h2>Delete Account </h2> 
+  <button (click) = "getConfirmation()"> Delete </button>
+</div>

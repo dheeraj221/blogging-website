@@ -1,0 +1,25 @@
+<div class="edit-post-container">
+  <h2>Edit-Post</h2>
+  <table>
+    <tr>
+      <td>
+        <span>Title :</span>
+      </td>
+      <td>
+        <input [(ngModel)]="title" type='text' required> <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Description :</span>
+      </td>
+      <td>
+        <input [(ngModel)]="description" type='text' required> <br>
+      </td>
+    </tr>
+  </table>
+  <div class="message"> {{message}} </div>
+  <br>
+  <button (click)="saveChanges()">Save</button> <br>
+  <button routerLink="../">Cancel</button>
+</div>

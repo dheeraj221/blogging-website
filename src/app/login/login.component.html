@@ -1,0 +1,31 @@
+<title>login Page</title>
+<div class = "container">
+  New User, Create An Account <button routerLink="register"> Register </button> <br> <br>
+
+  <h2>Please Sign In</h2>
+  <table border = "3">
+    <tr>
+      <td>
+        <span>Email :</span>
+      </td>
+      <td>
+        <input [(ngModel)]="email" type='text' required> <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Password :</span>
+      </td>
+      <td>
+        <input [(ngModel)]="password" type='password' required> <br>
+      </td>
+    </tr>
+  </table>
+
+  <button (click)="loginRequest()">Login</button> <br> <br>
+<div class= "message"> {{message}} </div>
+<!-- 
+  TODO: Remove This Button 
+-->
+<button id="tempButton" (click)="fillTempData()">Temporary -- Fill Data</button>
+</div>

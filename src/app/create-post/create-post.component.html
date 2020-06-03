@@ -1,0 +1,25 @@
+<div class="create-post-container">
+  <h3>Create Post</h3>
+  <table>
+    <tr>
+      <td>
+        <span>Title :</span>
+      </td>
+      <td>
+        <input [(ngModel)]="title" type='text' required> <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Description :</span>
+      </td>
+      <td>
+        <input [(ngModel)]="description" type='text' required> <br>
+      </td>
+    </tr>
+  </table>
+  <div class="message"> {{message}} </div>
+  <br>
+  <button (click)="createPost()">Create</button>
+  <button routerLink="../">Cancel</button>
+</div>

@@ -1,0 +1,43 @@
+<div class="register-container">
+  <h3>Create An Account</h3>
+  <table>
+    <tr>
+      <td>
+        <span>Name :</span>
+      </td>
+      <td>
+        <input [(ngModel)]="name" type='text' required> <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Email :</span>
+      </td>
+      <td>
+        <input [(ngModel)]="email" type='text' required> <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Password :</span>
+      </td>
+      <td>
+        <input [(ngModel)]="password" type='password' required> <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Confirm Password :</span>
+      </td>
+      <td>
+        <input [(ngModel)]="confirmPassword" type='password' required> <br>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+  <button (click)="registerUser()">Register</button> <br>
+  <button routerLink="">Cancel</button>
+  <br>
+  <div class="message"> {{message}} </div>
+</div>
